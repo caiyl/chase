@@ -15,6 +15,7 @@ public class CommonController {
 
     @GetMapping("/sayHello")
     public String sayHello() {
-        return commonService.sayHello();
+//        return commonService.sayHello();
+        return "hello boot";
     }
 }

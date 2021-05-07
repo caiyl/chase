@@ -1,0 +1,19 @@
+common:
+    service:
+        password: admin23
+        username: admin
+
+#spring:
+#    application:
+#        name: chase
+#    cloud:
+#        sentinel:
+#            transport:
+#                port: 8729
+#                dashboard: localhost:9090
+#            eager: false
+
+
+
+server:
+    port: 8000
