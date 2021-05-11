@@ -1,4 +1,4 @@
-package com.league.chase.beanPostProcessor;
+package com.league.chase.beanFactoryPostProcessor;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -6,15 +6,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MyBeanPostProcessorTest {
+public class MyBeanFactoryPostProcessorTest {
+
     @Autowired
-    private BeanPostProcessorService service;
+    private BeanFactoryPostProcessorService service;
 
     @Test
-    public void serviceTest(){
-        System.out.println("MyBeanPostProcessorTest---->"+service);
+    public void postProcessBeanFactoryTest() {
+        System.out.println("MyBeanFactoryPostProcessorTest---->"+service.getName());
     }
 }
